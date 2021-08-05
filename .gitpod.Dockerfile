@@ -9,7 +9,7 @@ RUN mkdir -p /tmp/mongodb && \
     sudo cp bin/* /usr/local/bin/ && \
     rm -rf /tmp/mongodb && \
     sudo mkdir -p /data/db && \
-    sudo chown gitpod:gitpod -R /data/db
+    sudo chown gitpod:gitpod -R /data/db \
     sudo service mongodb start
     
 #Install Google key
