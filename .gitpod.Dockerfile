@@ -10,7 +10,7 @@ RUN mkdir -p /tmp/mongodb && \
     rm -rf /tmp/mongodb && \
     sudo mkdir -p /data/db && \
     sudo chown gitpod:gitpod -R /data/db \
-    sudo service mongodb start
+    sudo systemctl start mongod
     
 #Install Google key
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
